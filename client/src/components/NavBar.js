@@ -1,11 +1,20 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+
+const styles = {
+  active: {
+    fontWeight: 'bold',
+    backgroundColor: 'grey',
+    color: 'white',
+    textDecoration: 'none',
+  }
+}
 
 const NavBar = () => (
   <nav>
-    <Link to="/">Home</Link>
+    <NavLink exact activeStyle={styles.active} to="/">Home</NavLink>
     {' '}
-    <Link to="/details">Details</Link>
+    <NavLink activeStyle={styles.active} to="/details">Details</NavLink>
   </nav>
 )
 
