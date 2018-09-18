@@ -15,6 +15,8 @@ const NavBar = () => (
     <NavLink exact activeStyle={styles.active} to="/">Home</NavLink>
     {' '}
     <NavLink activeStyle={styles.active} to="/details">Details</NavLink>
+    {' '}
+    <NavLink activeStyle={styles.active} to="/menu">Menu</NavLink>
   </nav>
 )
 

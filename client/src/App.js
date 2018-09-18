@@ -4,6 +4,7 @@ import Main from './components/Main'
 import Details from './components/Details'
 import NoMatch from './components/NoMatch'
 import NavBar from './components/NavBar'
+import Menu from './components/Menu'
 
 const App = () => (
 <Fragment>
@@ -11,6 +12,7 @@ const App = () => (
   <Switch>
     <Route exact path="/" component={Main} />
     <Route exact path="/details" component={Details} />
+    <Route exact path="/Menu" component={Menu} />
     <Route component={NoMatch} />
   </Switch>
 </Fragment>
